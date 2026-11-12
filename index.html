@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Intenseloop — makers of AppScreen, and a guide to panorama app screenshots</title>
+<meta name="description" content="Intenseloop is a small software team. We build AppScreen, a browser editor for App Store and Google Play screenshots. Here is how we design screenshot sets that flow from one slide to the next.">
+<link rel="canonical" href="https://intenseloop.github.io/">
+<meta property="og:title" content="Intenseloop — makers of AppScreen">
+<meta property="og:description" content="A small team building AppScreen, plus a short guide to panorama screenshots for the App Store and Google Play.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://intenseloop.github.io/">
+<meta property="og:image" content="https://appscreen.pro/assets/og.jpg">
+<style>
+  :root { --fg:#16161a; --muted:#5c5f66; --line:#e4e4ea; --accent:#5b3df5; --soft:#f5f4fb; }
+  * { box-sizing:border-box; }
+  body { margin:0; font:17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color:var(--fg); background:#fff; }
+  header, main, footer { max-width:740px; margin:0 auto; padding:0 20px; }
+  header { padding-top:56px; }
+  .brand { font-weight:700; letter-spacing:.02em; color:var(--muted); text-transform:uppercase; font-size:.85rem; }
+  h1 { font-size:2.1rem; line-height:1.2; margin:10px 0 14px; }
+  h2 { font-size:1.35rem; margin:46px 0 10px; padding-top:10px; border-top:1px solid var(--line); }
+  p.lead { color:var(--muted); font-size:1.1rem; }
+  a { color:var(--accent); }
+  .card { background:var(--soft); border:1px solid var(--line); border-radius:14px; padding:20px 22px; margin:26px 0; }
+  .card h3 { margin:0 0 6px; font-size:1.15rem; }
+  ol li, ul li { margin:6px 0; }
+  table { border-collapse:collapse; width:100%; font-size:.95rem; margin:12px 0; }
+  th, td { text-align:left; padding:8px 10px; border-bottom:1px solid var(--line); }
+  footer { color:var(--muted); font-size:.9rem; padding:40px 20px 60px; }
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">Intenseloop</div>
+  <h1>We build small, focused tools for people who ship apps.</h1>
+  <p class="lead">Intenseloop is a small software team. Our main product right now is AppScreen, an editor for store screenshots that runs in the browser.</p>
+</header>
+<main>
+  <div class="card">
+    <h3><a href="https://appscreen.pro">AppScreen</a></h3>
+    <p>Design App Store and Google Play screenshots on one wide canvas, then export each slide at the size the store asks for. iPhone and Android phone frames are free, with no account needed to start. iPad and Android tablet frames, cloud projects and share links come with Pro, a one-time $9.</p>
+    <p><a href="https://appscreen.pro">Open AppScreen at appscreen.pro</a></p>
+  </div>
+
+  <h2 id="panorama">Panorama screenshots, in plain terms</h2>
+  <p>A store listing shows your screenshots as a horizontal strip. Most sets ignore that: each slide is its own little poster with its own layout. A panorama set treats the whole strip as one picture. A phone can sit across the edge between two slides, a background shape can carry on into the next frame, and the eye gets pulled sideways. People keep swiping because the picture isn't finished yet.</p>
+
+  <h2 id="plan">How we plan a set</h2>
+  <ol>
+    <li><strong>Write the story first.</strong> Five to eight short claims, one per slide, in the order a new user would care about them. The first two do most of the work, because they are all many people see in search.</li>
+    <li><strong>Pick one anchor element.</strong> A tilted phone, a curve, a color band. It's the thing that crosses at least one seam and ties the slides together.</li>
+    <li><strong>Lay it out on one canvas.</strong> Design the full strip at once instead of slide by slide. You can see right away where a seam cuts through a face, a button or a word.</li>
+    <li><strong>Keep text off the seams.</strong> Phones and shapes can cross; headlines should not. A word split across two slides is hard to read when only one slide is on screen.</li>
+    <li><strong>Check every slide alone.</strong> Each slide still has to make sense by itself, since a shared link or a search result may show only one.</li>
+    <li><strong>Export per store.</strong> Cut the strip into the exact sizes, then repeat the layout for tablets instead of stretching the phone set.</li>
+  </ol>
+
+  <h2 id="sizes">Sizes we export at</h2>
+  <table>
+    <tr><th>Store</th><th>Device</th><th>Export size</th></tr>
+    <tr><td>App Store</td><td>iPhone</td><td>1284 × 2778</td></tr>
+    <tr><td>App Store</td><td>iPad</td><td>2064 × 2752</td></tr>
+    <tr><td>Google Play</td><td>Android phone</td><td>1080 × 1920</td></tr>
+    <tr><td>Google Play</td><td>Android tablet</td><td>1440 × 2560</td></tr>
+  </table>
+
+  <h2 id="mistakes">Where panorama sets go wrong</h2>
+  <ul>
+    <li><strong>Too many crossings.</strong> One or two elements crossing a seam reads as intent. Every slide bleeding into the next reads as a cropping error.</li>
+    <li><strong>A weak first slide.</strong> The flow only helps if the first frame earns the swipe. Lead with the main benefit, not the logo.</li>
+    <li><strong>Forgetting Google Play.</strong> Play shows a different strip on many devices, so check the set at Android sizes before upload.</li>
+  </ul>
+
+  <p>If you want to try this, <a href="https://appscreen.pro">AppScreen</a> is built around exactly this workflow: every slide on one canvas, and one PNG per slide on export.</p>
+</main>
+<footer>
+  Intenseloop · <a href="https://appscreen.pro">appscreen.pro</a> · <a href="https://github.com/Intenseloop">github.com/Intenseloop</a>
+</footer>
+</body>
+</html>
